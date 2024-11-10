@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de866dee59.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.png " class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <div class="header-content">
+                    <p>SOFTWARE DEVELOPER</p>
+                    <h1> Hi, I'm <span>Virat</span><br> Rana </h1>
+                </div>
+                <img class="imge" src="image.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------about------------------------------------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpg" alt="MY IMAGE">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> A passionate and results-driven software engineer with a knack
+                        for turning ideas into efficient, reliable, and scalable solutions. My journey in the world of
+                        technology began in first year of my college, and since
+                        then, I've been on an exciting adventure of continuous learning and innovation.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Development Web/App interfaces</span><br> Web Development</li>
+                            <li><span>Languages</span><br>C/C++, Python <br>My Sql, Tabular, Power Bi<br> Html, Css,
+                                Java script</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>- Created a Bank Management System that can store and record all the transactions of the account.</li>
+                            <li>- Curruntly working on Hotel Management Site using Next.js, React, Sanity.io, Tailwind, Stripe.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-26</span><br>Symbiosis institute of technology</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    
+    <!-----------------------------------------------------------services--------------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                 <!--<p>coming soon</p>--->
+                    <a href="#">Learn More</a>
+                </div>
+                <!--<div>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h2>Web design</h2>
+                    <p>coming soon</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h2>Web design</h2>
+                    <p>coming soon</p>
+                    <a href="#">Learn More</a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------portfolio------------------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Project</h1>
+            <div class="Project-list">
+                <div class="Project">
+                    <h1><i class="fa-solid fa-money-bill-transfer"></i></h1>
+                    <img src="bank.jpg" alt=""><!---image to be attached-->
+                    <div class="layer">
+                        <h3>Bank Managment System</h3>
+                        <p>The Bank Management System is a robust software solution that automates banking
+                            operations. It tracks all transactions with timestamps, and calculates Fixed and Recurring
+                            Deposits. This system enhances efficiency and transparency, making financial management
+                            easier for customers.</p>
+                        <a href="https://github.com/aniishchoudhary/bank-management-system.git"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Project">
+                    <h1><i class="fa-solid fa-graduation-cap"></i></h1>
+                    <img src="campus.jpg" alt="">
+                    <div class="layer">
+                        <h3>Campus Buddy System</h3>
+                        <p>...............</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Project">
+                    <h1><i class="fa-solid fa-hourglass-end"></i></h1>
+                    <img src="wait.png" alt="">
+                    <div class="layer">
+                        <h3>more to come</h3>
+                        <p>...............</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more </a>
+        </div>
+    </div>
+    <!---------------------------------contact----------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>viratrana2024@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7206988733</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/choudhary-anish/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/aniishchoudhary"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/aniiishchoudhary/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="16" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">SUBMIT</button>
+                       
+                    </form>
+                    <span id="msg"></span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var isOpen = false;
+        function openmenu() {
+            console.log('hello');
+            var sidemenu = document.getElementById("sidemenu");
+            sidemenu.style.right= "100000px";
+        }
+        function closemenu() {
+            var sidemenu = document.getElementById("sidemenu");
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbynRLnNmq455KW-Mv1_oEkni351kOCSsApHGWMcmUUermL-BYyzOrg5TQouYb1qGG4P/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg"); 
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML =" "
+                },5000)
+                form.reset()
+
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
